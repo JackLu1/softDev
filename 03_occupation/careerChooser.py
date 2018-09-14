@@ -14,7 +14,7 @@ def choose(fileName):
     dict = {}
     with open(fileName, 'rt') as csvfile:
         reader = csv.reader(csvfile)
-        heading = reader.__next__() # skips column labels Job Class, Percentage
+        reader.__next__() # skips column labels Job Class, Percentage
         for i in reader:
             dict[ i[0] ] = float( i[1])
         del dict['Total'] # Deletes total percentage
