@@ -2,10 +2,24 @@
 
 <html>
     <head>
-        <title> {{ foo }} </title>
+        <title> {{ title }} </title>
+        <style>
+            table, td, th {
+                border: 1px solid black;
+                font-weight: 500;
+            }
+        </style>
     </head>
     <body>
-        fooo
+        <h2>Occupation Rates</h2>
+        <h3>Random Job: {{rand}}</h3>
+        <table>
+            {% for job in occupations %}
+                <tr>
+                    <th> {{job}} </th>
+                    <th> {{occupations[job]}} </th>
+                </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>
-
