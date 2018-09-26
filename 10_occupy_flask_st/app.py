@@ -8,6 +8,9 @@ from util import process
 
 app = Flask(__name__)
 
+import util.process as process
+
+app = Flask(__name__)
 
 # Root directory with link to table of occupations.
 @app.route('/')
