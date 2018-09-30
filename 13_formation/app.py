@@ -12,15 +12,15 @@ def index():
     print(app)
     return render_template('file.html')
 
-@app.route('/auth')
+@app.route('/auth', methods=["POST"])
 def authenticate():
     print(app)
     print(request)
-    print(request.args)
-    print(request.args['username'])
+    print(request.form)
+    print(request.form['username'])
     print(request.headers)
-    usr = request.args['username']
-    return render_template('authenticate.html', identity = usr)
+    usr = request.form['username']
+    return render_template('authenticate.html', identity = usr, method = request.method)
 
 app.debug = True
 app.run()
