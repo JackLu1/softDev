@@ -18,8 +18,7 @@ app.secret_key = os.urandom(32)
 def index():
     if usr in session:
         return render_template('welcome.html', title='Welcome ' + usr, user_welcome= usr)
-    else: 
-        return render_template('form.html', title='Login')
+    return render_template('form.html', title='Login')
 
 @app.route('/auth', methods=["POST"])
 def authenticate():
