@@ -9,8 +9,8 @@ import os
 app = Flask(__name__)
 
 # Hardcoded:
-usr = 'ZhouLu'
-pw = 'abc1234'
+usr = 'jlu9'
+pw = 'abc123'
 # Generate random secret key
 app.secret_key = os.urandom(32)
 
@@ -18,11 +18,11 @@ app.secret_key = os.urandom(32)
 def index():
     if usr in session:
         return render_template('welcome.html', title='Welcome ' + usr, user_welcome= usr)
-    return render_template('form.html', title='Login')
+    return render_template('login.html', title='Login')
 
 @app.route('/auth', methods=["POST"])
 def authenticate():
-    check_usr = request.form["name"] 
+    check_usr = request.form["name"]
     check_pw = request.form["pass"]
 
     if check_pw != pw and check_usr != usr:
