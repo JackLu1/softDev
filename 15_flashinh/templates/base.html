@@ -12,9 +12,14 @@
     {% endblock %}
 
     {% block footer %}
-    <br>
-    <br>
-    <br>
+        <br>
+        Flash Messages: <br><br>
+        {% set msgs = get_flashed_messages() %}
+        {% for each in msgs %}
+            {{each}} <br>
+        {% endfor %}
+
+        <br>
         Website by Jack Lu and Hui Min Wu
     {% endblock %}
 </body>
