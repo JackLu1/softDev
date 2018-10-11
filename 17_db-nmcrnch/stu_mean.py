@@ -70,7 +70,8 @@ def main():
     addData(dataForTable)
     addCourse('english', 55, 1)
     
-main()
+#main()
+addCourse('calc', 55, 1)
 
 db.commit() #save changes
 db.close()  #close database
