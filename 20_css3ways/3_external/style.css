@@ -1,0 +1,45 @@
+.body{
+    background-color: #666666;
+    font-family: Arial;
+}
+
+.bg{
+    background-color: #767676;
+}
+
+.head{
+    color: white;
+    background-color: #BEBEBE;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.link{
+    color: #DCDCDC;
+    text-decoration: none;
+}
+
+.main{
+    padding-right: 0px;
+    text-align: left;
+    padding-left: 130px;
+}
+
+.footer{
+    background-color: #565656;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: #767676
+}
+
+.bar{
+    float: left;
+}
+
+.bar-content{
+    padding-left: 10px;
+    list-style-type: none;
+}
