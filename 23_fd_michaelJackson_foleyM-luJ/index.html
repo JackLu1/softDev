@@ -1,43 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" integrity="sha256-VEEaOnBKVRoYPn4AID/tY/XKVxKEqXstoo/xZ6nemak= sha384-D46t32f421/hB30qwnim2pIcisNN5GU9+6m2Mfnd3dKpTSFidZLa08/1StEiCFId sha512-WkgzH8VKemDfwrp18r+wgbx+oHXOkfd2kJs7ocAXdGDgonXDXh88E90IRtRZRXtO0IHprxYHYlY14h+wyTsUDA==" crossorigin="anonymous">
-        <title>title</title>
-    </head>
-    <body>
-
-        <div class="grid-x grid-padding-x">
-            <div class="cell medium-2 medium-cell-block-y">
-                <div class="vertical menu">
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                    <li><a href="#">Item 6</a></li>
-                    <li><a href="#">Item 7</a></li>
-                    <li><a href="#">Item 8</a></li>
-                    <li><a href="#">Item 9</a></li>
-                    <li><a href="#">Item 10</a></li>
-                </div>
-            </div>
-            <div class="cell medium-10 medium-cell-block-y"><div>
-                    Elit labore voluptatem ut asperiores suscipit, nemo! Praesentium vel autem cum aspernatur architecto. Tempora aliquid molestiae temporibus doloremque impedit mollitia consectetur Molestias aspernatur illo repellendus quas provident. Nesciunt aspernatur voluptate?
-                </div>
-                <div>
-                    Dolor quia nulla sint atque eveniet. Consectetur nisi non ut dicta rerum, ab. Asperiores minus sapiente saepe deleniti assumenda Recusandae similique nulla magnam odio dolore Explicabo repudiandae nisi distinctio dolorem.
-                </div>
-                <div>
-                    Consectetur magnam consequatur vel eaque repellat! Ab aliquid saepe reprehenderit obcaecati inventore accusamus Quia delectus non in modi harum Doloremque iure aliquid praesentium laborum reiciendis Officia doloremque in qui exercitationem.
-                </div>
-                
-
-
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" integrity="sha256-VEEaOnBKVRoYPn4AID/tY/XKVxKEqXstoo/xZ6nemak= sha384-D46t32f421/hB30qwnim2pIcisNN5GU9+6m2Mfnd3dKpTSFidZLa08/1StEiCFId sha512-WkgzH8VKemDfwrp18r+wgbx+oHXOkfd2kJs7ocAXdGDgonXDXh88E90IRtRZRXtO0IHprxYHYlY14h+wyTsUDA==" crossorigin="anonymous">
+    <title>Let's get in foundation</title>
+</head>
+<body>
+    <h3>
+        &nbsp;&nbsp;&nbsp; Which goes first, the eye makeup or the foundation?
+    </h3>
+    <h4 style="color: gray">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By Michael Jackson
+    </h4>
+    <div class="grid-x grid-padding-x">
+        <div class="cell medium-2 medium-cell-block-y">
+            <div class="vertical menu">
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#grid">Grids</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#callout">Callouts</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#more">More</a></li>
             </div>
         </div>
+        <div class="cell medium-10 medium-cell-block-y">
 
-        <br style="line-height:70">
+            <div id = "intro">
+                <h3>Introduction</h3>
+                <p>If you already have Foundation in your style sheet, <a href="#grid">skip this section.</a>
+                    <br>To add Foundation CSS to your site, add the following line of code into the head section of your html file.
+                    <br>This makes use of a Content Delivery Network (CDN).
+                </p>
+                <pre style="background-color: lightgray"><xmp>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" integrity="sha256-VEEaOnBKVRoYPn4AID/tY/XKVxKEqXstoo/xZ6nemak= sha384-D46t32f421/hB30qwnim2pIcisNN5GU9+6m2Mfnd3dKpTSFidZLa08/1StEiCFId sha512-WkgzH8VKemDfwrp18r+wgbx+oHXOkfd2kJs7ocAXdGDgonXDXh88E90IRtRZRXtO0IHprxYHYlY14h+wyTsUDA==" crossorigin="anonymous">
+                </xmp></pre>
+                <p> You can also download and use a local version of the CSS sheet.  This is not recommended, but if you want to learn more click <a href="https://foundation.zurb.com/sites/download.html/">here.</a></p>
+            </div>
+            <br>
+            <div id = "grid">
+                <h3>XY Grid</h3>
+                Grids are containers that allow you to control padding and placement of sections of content on your page.
 
-    </body>
+                <div class="grid-x grid-padding-x">
+                    <div class="medium-1 cell">
+                    </div>
+                    <div class="medium-11 cell">
+                      <br>
+                      <br>
+                      <div class="grid-x grid-padding-x">
+
+                        <div class="cell small-6">
+                            <div class="callout">half cell with padding
+                            </div>
+                        </div>
+                        <div class="cell small-6">
+                            <div class="callout">half cell with padding
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre style="background-color: lightgray"><xmp>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-6">
+            <div class="callout">
+                half cell with padding
+            </div>
+        </div>
+        <div class="cell small-6">
+            <div class="callout">
+                half cell with padding
+            </div>
+        </div>
+    </div>
+                    </xmp></pre>
+                </div>
+                </div>
+                <br><br>
+                Above, you can see many important aspects of the XY grid.  One is that there is a limit to 12 total for the values in each of the cells (the 6s in the example above).  You can also see that above we have padding on.  Let's try an example with different numbers and no padding...
+                <div class="grid-x grid-padding-x">
+                <div class="medium-1 cell">
+                </div>
+                <div class="medium-11 cell">
+                    <br>
+                    <br>
+                    <div class="grid-x">
+
+                        <div class="cell small-1">
+                            <div class="callout">1/12 cell
+                            </div>
+                        </div>
+                        <div class="cell small-6">
+                            <div class="callout">6/12 cell
+                            </div>
+                        </div>
+                        <div class="cell small-3">
+                            <div class="callout">3/12 cell
+                            </div>
+                        </div>
+                        <div class="cell small-2">
+                            <div class="callout">2/12 cell
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre style="background-color: lightgray"><xmp>
+    <div class="grid-x">
+        <div class="cell small-1">
+            <div class="callout">1/12 cell
+            </div>
+        </div>
+        <div class="cell small-6">
+            <div class="callout">6/12 cell
+            </div>
+        </div>
+        <div class="cell small-3">
+            <div class="callout">3/12 cell
+            </div>
+        </div>
+        <div class="cell small-2">
+            <div class="callout">2/12 cell
+            </div>
+        </div>
+    </div>
+
+                    </xmp></pre>
+                </div>
+                </div>
+            </div>
+
+<br>
+        <div id = "buttons">
+            <h3>Buttons</h3>
+            <p>
+            With Foundation, you are able to create buttons of many styles without the hastle of making them look nice. This is written as follows:
+        </p>
+            <br>
+            <pre><xmp style="background-color: lightgray">
+    <a type="button" class="button XXXX">Title</a>
+            </xmp></pre>
+            <br>
+            <p>The different styles are displayed below with their names (what would replace XXXX in the code above).</p>
+            <a type="button" class="button primary">primary</a>
+            <a type="button" class="button secondary">secondary</a>
+            <a type="button" class="button success">success</a>
+            <a type="button" class="button alert">alert</a>
+            <a type="button" class="button warning">warning</a>
+            <br>
+            <h5>Other button styles</h5>
+            <p>Note: These can all be used with all above styles, primary is being used as an example.</p>
+            <h6>Outline buttons</h6>
+            <pre><xmp style="background-color: lightgray">
+            <a type="button" class="button hollow primary">Primary</a>
+            </xmp></pre><br>
+            <a type="button" class="button hollow primary">Primary</a>
+            <br>
+            <h6>Disabled buttons</h6>
+            <pre><xmp style="background-color: lightgray">
+                <a type="button" class="button primary" disabled>Title</a>
+            </xmp></pre><br>
+            <a type="button" class="button primary" disabled>Title</a>
+
+        </div>
+        <div id = "tables">
+            <h3>Tables</h3>
+            <p>Foundation provides tools to make tables easily customizable.</p>
+            <table class="hover">
+              <thead>
+                <tr>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>Mom always taught us to curl up in a ball and remain motionless when confronted. Pound is tic-tac-toe right?</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>You mean the guy we're meeting with can't even grow his own hair? Come on! It's a wonderful restaurant! You boys know how to shovel coal? Excuse me, do these effectively hide my thunder?</td>
+                </tr>
+              </tbody>
+            </table>
+            <pre style="background-color: lightgray"><xmp>
+    <table class="hover">
+      <thead>
+        <tr>
+          <th>Table Header</th>
+          <th>Table Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Content Goes Here</td>
+          <td>Mom always taught us to curl up in a ball and remain motionless when confronted. Pound is tic-tac-toe right?</td>
+        </tr>
+        <tr>
+          <td>Content Goes Here</td>
+          <td>You mean the guy we're meeting with can't even grow his own hair? Come on! It's a wonderful restaurant! You boys know how to shovel coal? Excuse me, do these effectively hide my thunder?</td>
+        </tr>
+      </tbody>
+    </table>
+            </xmp></pre>
+            <p>The table is automatically striped (add the class "unstriped" to the table tag if you don't want stripes).  The hover class has been added, try hovering over the table to see this in action.</p>
+            </div>
+        <div id="callout">
+            <h3>Callouts</h3>
+            <p>Callout culture? Nope! Just some good looking panels and alerta!</p>
+            <div class="callout primary">
+                <h5>This is a primary callout</h5>
+                <p>Annhog's coming? Let me out that Queen. And THAT'S why you always leave a note.</p>
+            </div>
+            <pre style="background-color: lightgray"><xmp>
+    <div class="callout primary">
+        <h5>This is a primary callout</h5>
+        <p>Annhog's coming? Let me out that Queen. And THAT'S why you always leave a note.</p>
+    </div>
+            </xmp></pre>
+            <br>
+            <p>Any of the styles for the buttons above can be used for callouts.</p>
+        </div>
+
+
+
+        <div id="media">
+            <h3>Media</h3>
+            <p>Media tools are useful for combining text, tables, images, and other content.</p>
+            <div class="media-object">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                        <img src="https://images2.wikia.nocookie.net/__cb20110829070704/mbmbam/images/2/25/Newjustinpic-1275592458_190x240.jpg">
+                    </div>
+                </div>
+                <div class="media-object-section">
+                    <h4>I had a case of the Mondays</h4>
+                        <p>“Take It Back,” by Jimmy Buffett,
+“Nautical Wheelers,” by Jimmy Buffet,
+“Jolly Mon Sing,” by Jimmy Buffett,
+“Steamer,” by Jimmy Buffett!
+“Treat Her Like a Lady!” by Jimmy Buffett!
+“Manana!” by Jimmy Buffett!
+“When Salome Plays the Drum” by James Buffett,
+“Havana Daydreaming!” by Jimmy Buffett...</p>
+                </div>
+            </div>
+
+            <pre style="background-color: lightgray"><xmp>
+    <div class="media-object">
+        <div class="media-object-section">
+            <div class="thumbnail">
+                <img src="https://images2.wikia.nocookie.net/__cb20110829070704/mbmbam/images/2/25/Newjustinpic-1275592458_190x240.jpg">
+            </div>
+        </div>
+        <div class="media-object-section">
+            <h4>I had a case of the Mondays</h4>
+            <p>“Take It Back,” by Jimmy Buffett, “Nautical Wheelers,” by Jimmy Buffet, “Jolly Mon Sing,” by Jimmy Buffett, “Steamer,” by Jimmy Buffett!, “Treat Her Like a Lady!” by Jimmy Buffett!, “Manana!” by Jimmy Buffett! “When Salome Plays the Drum” by James Buffett, “Havana Daydreaming!” by Jimmy Buffett...</p>
+        </div>
+    </div>
+</xmp></pre>
+        </div>
+        <div id="more">
+            <h3>More Resources</h3>
+            <p>Check out the Foundation website <a href="https://foundation.zurb.com/sites/docs/">here!</a></p>
+        </div>
+    </div>
+</div>
+<br><br><br>
+</body>
 </html>
