@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>The Guardian News</title>
+    </head>
+    <body>
+        <h1>
+            <center>News From The Guardian</center>
+        </h1>
+        {% for article in data %}
+        <div class="container">
+            <a href={{article['webUrl']}}>{{article['webTitle']}}</a>
+            <p>in <b>{{article['sectionName']}}</b> on <b>{{article['webPublicationDate']}}</b></p>
+            <br>
+        </div>
+        {% endfor %}
+</body>
+</html>
