@@ -4,11 +4,11 @@
 // 2018-12-21
 
 var fib = function (n){
-    if (n < 2){
-        return n;
+    var results = [0, 1];
+    for (var i = 2; i <= n; i++){
+        results.push(results[i-2]  + results[i-1]);
     }
-    else
-        return fib(n-1) + fib(n-2);
+    return results[n];
 }
 
 // display list item when hovering over it
@@ -32,11 +32,30 @@ document.getElementById("thelist").addEventListener('mouseout', function(){
 
 // adds element to list when button pushed
 var addList = document.getElementById("b");
-addList.addEventListener('click', function(e){
+addList.addEventListener('click', function(){
     //console.log(e);
     var item = document.createElement("li");
     item.innerHTML = "new item";
     var ol = document.getElementById("thelist");
     ol.appendChild(item);
+    item.addEventListener('mouseover', function(e){
+        //console.log(e.target.innerHTML);
+        document.getElementById("h").innerHTML = e.target.innerHTML;
+    })
+    item.addEventListener('click', function(){
+        this.remove();
+        document.getElementById("h").innerHTML = "Hello World!";
+    })
+});
+
+// add fib numbers in a list when fib button clicked
+var fiblist = document.getElementById("fiblist");
+var fbutton = document.getElementById("fb");
+var counter = 1;
+var f = document.getElementById("fiblist");
+fbutton.addEventListener('click', function(e){
+    var item = document.createElement("li");
+    item.innerHTML = fib(counter++);
+    f.appendChild(item);
 });
 
